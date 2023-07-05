@@ -1,0 +1,140 @@
+nav {
+    position: sticky;
+    top: 0px;
+    z-index: 101;
+    
+  }
+  
+  .navbar {
+    height: 80px;
+    background-color:rgb(0, 255, 132);
+    border-radius: 2px;
+    /* border-bottom: 1px solid #c28888; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .navbar .mobile {
+    display: none;
+  }
+  
+  .mobile {
+    display: none;
+  }
+  
+  .navbar_items {
+    font-size: 1rem;
+    display: flex;
+    list-style: none;
+    align-items: center;
+  }
+  
+  .navbar_items .mobile {
+    display: none;
+  }
+  
+  .navbar_items li {
+    background-color:white;
+    border: 1px solid;
+    width: 4.2rem;
+    height: 1.3rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    border-radius: 0.5rem;
+    transition: 0.6s ease-in-out;
+    transition: background-color 0.6s ease-in-out;
+    border:none;
+  }
+  
+  .navbar_items .first_a {
+    background-color:white;
+    border: 1px solid #fff;
+    width: 4.2rem;
+    height: 1.3rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    border-radius: 0.5rem;
+    transition: 0.5s ease-in-out;
+  }
+  
+  .navbar_items a {
+    color:black;
+    text-decoration: none;
+  }
+  
+  .navbar_items li:hover {
+    background-color:rgb(155, 250, 13);
+    cursor: pointer;
+    border: 1px solid rgb(206, 173, 173);
+  }
+  
+  .change_background {
+    background-color: black;
+    border: 1px solid rgb(241, 236, 236);
+  }
+  
+  .navbar_items button {
+    margin-left: 1.5rem;
+  }
+  
+  .image img {
+    width: 5rem;
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width: 750px) {
+    .navbar_items {
+      display: none;
+    }
+  
+    .navbar .mobile {
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 600;
+      display: block;
+      margin-left: 80%;
+      margin-top: 1.5rem;
+    }
+  
+    .mobile {
+      display: unset;
+    }
+  
+    .mobile_list {
+      background-color:rgb(12, 40, 41);
+      position: fixed;
+      margin-top: 2.4rem;
+      right: 0px;
+      width: 40vw;
+      height: 50vh;
+      font-size: 1.4rem;
+      /* border-radius: 0.5rem; */
+      border-radius: 50%;
+    }
+  
+    .mobile_list li {
+      list-style: none;
+      margin: 1rem;
+    }
+  
+    .mobile_list_anchor a {
+      text-decoration: none;
+      color: #fff;
+      margin: 2.5rem;
+      width: 50px;
+      height: 20px;
+    }
+  
+    .mobile_list_anchor button {
+      margin: 2rem;
+      margin-left: 4rem;
+    }
+  
+    .closeicon {
+      margin: 1rem;
+      margin-left: 30vw;
+    }
+  }
